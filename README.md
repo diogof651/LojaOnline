@@ -1,14 +1,19 @@
 # LojaOnline
-Projeto para desenvolvimento de uma loja virtual com as principais funcionalidades de um ecommerce.
+Loja online é uma aplicação que permite clientes selecionem e comprem produtos. Existem algumas variações deste tema que podem ser escolhidos. Por exemplo, pode-se escolher o desenvolvimento de uma plataforma de anúncios no estilo do mercado livre ou uma plataforma fechada no estilo Americanas.
 
- ## Features
+## Histórias de Usuário
+- [ ] Navegar por uma lista de produtos
+- [ ] Buscar por produtos através do nome
+- [ ] Visualizar detalhes de um produto
+- [ ] Navegar por categorias
+- [ ] Adicionar produtos à sacola de compras
+- [ ] Finalizar uma compra
 
-- Item list
-- Item list
-- Item list
-- Item list
-- Item list
-
+## Histórias Bônus
+- [ ] Avaliar produtos
+- [ ] Receber recomendações de produtos
+- [ ] Fazer buscas avançadas
+- [ ] Se cadastrar para receber novidades
 
 ```sh
 cd src
