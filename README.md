@@ -21,7 +21,7 @@ yarn dev
 node app
 ```
 
-## Colaboradores projeto
+## Colaboradores do projeto
 
 | Avatar | Nome |
 | ------ | ------ |
