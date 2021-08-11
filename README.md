@@ -9,6 +9,7 @@ Projeto para desenvolvimento de uma loja virtual com as principais funcionalidad
     |[![Gilson Santos](https://avatars.githubusercontent.com/u/5659433?s=64&v=4)](https://github.com/gilsonsantosux) | [@GilsonSantosUX](https://github.com/gilsonsantosux) |
     |[![Jeferson Lima](https://avatars.githubusercontent.com/u/11639069?s=64&v=4)](https://github.com/gilsonsantosux) | [@JefersonLima](https://github.com/jefersonlima) |
 
+
  ## Features
 
     - Item list
