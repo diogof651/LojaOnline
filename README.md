@@ -25,9 +25,9 @@ node app
 
 | Avatar | Nome |
 | ------ | ------ |
-|[![Diogo Felipe](https://avatars.githubusercontent.com/u/67284614?s=64&v=4)](https://github.com/gilsonsantosux) | [@DiogoFelipe](https://github.com/diogof651) |
+|[![Diogo Felipe](https://avatars.githubusercontent.com/u/67284614?s=64&v=4)](https://github.com/diogof651) | [@DiogoFelipe](https://github.com/diogof651) |
 |[![Gilson Santos](https://avatars.githubusercontent.com/u/5659433?s=64&v=4)](https://github.com/gilsonsantosux) | [@GilsonSantosUX](https://github.com/gilsonsantosux) |
-|[![Jeferson Lima](https://avatars.githubusercontent.com/u/11639069?s=64&v=4)](https://github.com/gilsonsantosux) | [@JefersonLima](https://github.com/jefersonlima) |
+|[![Jeferson Lima](https://avatars.githubusercontent.com/u/11639069?s=64&v=4)](https://github.com/jefersonlima) | [@JefersonLima](https://github.com/jefersonlima) |
 
 > Note: `--capt-add=SYS-ADMIN` is required for PDF rendering.
 
