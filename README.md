@@ -2,8 +2,8 @@
 Loja online é uma aplicação que permite clientes selecionem e comprem produtos. Existem algumas variações deste tema que podem ser escolhidos. Por exemplo, pode-se escolher o desenvolvimento de uma plataforma de anúncios no estilo do mercado livre ou uma plataforma fechada no estilo Americanas.
 
 ## Protótipo
-- [ ] [Desktop](https://www.figma.com/proto/Flot7v1pDSWhWgHybwJ387/Store-On?page-id=2%3A8&node-id=111%3A6942&viewport=241%2C48%2C0.71&scaling=scale-down&starting-point-node-id=111%3A6942)
-- [ ] [Mobile](https://github.com/diogof651)
+- [X] [Desktop](https://www.figma.com/proto/Flot7v1pDSWhWgHybwJ387/Store-On?page-id=2%3A8&node-id=111%3A6942&viewport=241%2C48%2C0.71&scaling=scale-down&starting-point-node-id=111%3A6942)
+- [X] [Mobile](https://github.com/diogof651)
 
 
 ## Histórias de Usuário
