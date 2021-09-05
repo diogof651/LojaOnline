@@ -130,11 +130,11 @@
 		#3f8ed6 0%,
 		#001d33 100%
 	);
-	--color-feedback-informative-1: #8ecbff;
-	--color-feedback-informative-2: #60adf3;
-	--color-feedback-informative-3: #3f8ed6;
-	--color-feedback-informative-4: #1c69af;
-	--color-feedback-informative-5: #001d33;
+	--color-feedback-informative-1: #8ECBFF;
+	--color-feedback-informative-2: #60ADF3;
+	--color-feedback-informative-3: #3F8ED6;
+	--color-feedback-informative-4: #1C69AF;
+	--color-feedback-informative-5: #001D33;
 
 	/* // Negative -------------------------------------------------------- // */
 	--color-feedback-negative-gradient: linear-gradient(
@@ -144,7 +144,7 @@
 	);
 	--color-feedback-negative-1: #f3b8b3;
 	--color-feedback-negative-2: #ec8a82;
-	--color-feedback-negative-3: #e45b50;
+	--color-feedback-negative-3: #E45B50;
 	--color-feedback-negative-4: #a34139;
 	--color-feedback-negative-5: #220e0c;
 
@@ -156,7 +156,7 @@
 	);
 	--color-feedback-warning-1: #f9dda8;
 	--color-feedback-warning-2: #f5c76e;
-	--color-feedback-warning-3: #f1b135;
+	--color-feedback-warning-3: #F1B135;
 	--color-feedback-warning-4: #ad7f26;
 	--color-feedback-warning-5: #241b08;
 
@@ -167,8 +167,8 @@
 		#00b206 100%
 	);
 	--color-feedback-positive-1: #bad6a4;
-	--color-feedback-positive-2: #8dbc69;
-	--color-feedback-positive-3: #22ff33;
+	--color-feedback-positive-2: #8DBC69;
+	--color-feedback-positive-3: #22FF33;
 	--color-feedback-positive-4: #457321;
 	--color-feedback-positive-5: #0e1807;
 
@@ -232,29 +232,6 @@ h5 {
 }
 h6 {
 	font-size: var(--font-headline-x6);
-}
-
-.flex {
-	display: flex;
-	justify-content: flex-start;
-	align-items: flex-start;
-	width: 100%;
-}
-
-.flex.row {
-	flex-direction: row;
-}
-
-.flex.column {
-	flex-direction: column;
-}
-
-.flex .align-center {
-	align-items: center;
-}
-
-.flex .justify-center {
-	justify-content: center;
 }
 
 button {
@@ -387,6 +364,29 @@ textarea {
 }
 
 /* // utils css class */
+
+.flex {
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-start;
+	width: 100%;
+}
+
+.flex.row {
+	flex-direction: row;
+}
+
+.flex.column {
+	flex-direction: column;
+}
+
+.flex .align-center {
+	align-items: center;
+}
+
+.flex .justify-center {
+	justify-content: center;
+}
 
 .mt-0 {
 	margin-top: var(--scale-xxsmall);
