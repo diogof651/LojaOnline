@@ -7,14 +7,32 @@ body{
 }
 
 nav{
-    background:var(--color-neutral-5);
     width:100%;
+    max-height:var(--scale-xxextra);
     padding:var(--scale-medium) var(--scale-big);
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    background:var(--color-neutral-5);
+}
+
+nav .nav-container{
+    width:var(--width-main);
+    display:flex;
+    gap:var(--scale-big);
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .wrapper-container{
     margin-bottom:var(--scale-large);
     padding:var(--scale-large);
+    display:flex;
+    flex-direction: column;
+    gap:var(--scale-xxlarge);
 
     border-radius:var(--radius-small);
     border:1px solid var(--color-neutral-1);
@@ -25,8 +43,5 @@ nav{
     color:var(--color-neutral-4);
     display:flex;
     align-items:center;
-}
-.wrapper-container>.heading>svg{
-    width:var(--scale-xxlarge);
-    height:var(--scale-xxlarge);
+    gap:var(--scale-large);
 }
