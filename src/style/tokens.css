@@ -186,4 +186,8 @@
 	--width-medium: 1280px;
 	--width-small: 968px;
 	--width-main: 1200px;
+
+	--gap-4: {
+		gap:var(--scale-large);
+	};
 }

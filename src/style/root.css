@@ -67,7 +67,7 @@ label{
 }
 
 button {
-	padding: 9px 24px;
+	padding: var(--scale-medium) var(--scale-xxlarge);
 	display: flex;
 	gap:var(--scale-medium);
 	box-sizing: border-box;
@@ -75,6 +75,7 @@ button {
 	flex-direction: row;
 	justify-content: center;
 	align-items: center;
+	min-height:var(--scale-xbig);
 
 	background: var(--color-principal-light);
 	font-size: var(--font-label);

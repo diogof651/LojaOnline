@@ -1,11 +1,5 @@
 @import '../../style/root.css';
 
-body{
-    background:var(--color-foreground-4);
-    width:100%;
-    height:100vh;
-}
-
 nav{
     width:100%;
     max-height:var(--scale-xxextra);
@@ -44,4 +38,59 @@ nav .nav-container{
     display:flex;
     align-items:center;
     gap:var(--scale-large);
+}
+
+.wrapper-container > section{
+    display:flex;
+    flex-direction:row;
+    justify-content:flex-start;
+    gap:var(--scale-large);
+    /* @extend gap-4; */
+    /* @apply --gap-4; */
+
+}
+
+footer{
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+    gap:var(--scale-large);
+    flex-grow: 1;
+    flex-flow: 1;
+}
+
+@media only screen and (max-width: 1240px)  {
+    main{
+        width:var(--width-fullscreen);
+        padding:0 var(--scale-large);
+    }
+    nav .nav-container{
+        width:var(--width-fullscreen);
+    }
+}
+
+@media only screen and (max-width:640px){
+    .wrapper-container>.heading{
+        font-size:var(--font-headline-x5);
+    }
+    nav .nav-container{
+        place-content: center center;
+    }
+    nav .nav-container a{
+        margin:0;
+    }
+    nav .nav-container button{
+        display:none;
+    }
+    .wrapper-container>section {
+        flex-direction: column;
+    }
+    footer{
+        flex-direction: column;
+        gap:var(--scale-medium);
+    }
+    footer button{
+        width:100%;
+        justify-content:space-between;
+    }
 }
