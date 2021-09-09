@@ -16,7 +16,7 @@ Loja online é uma aplicação que permite clientes selecionem e comprem produto
 - [ ] Endereço
 - [ ] Pagamento
 - [ ] Resumo
-- [ ] OrderFinish
+- [X] OrderFinish
 
 ## Histórias de Usuário
 - [ ] Navegar por uma lista de produtos
