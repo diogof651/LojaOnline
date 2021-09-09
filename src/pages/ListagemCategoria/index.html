@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cartunings | Listagem categoria</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="../../scripts/index.js" defer></script>
+    <script src="../../components/Navigation/index.js" defer></script>
+</head>
+<body>
+    <navigation-top >
+        <a href="#home" slot="brand">
+            <img src="../../assets/brand-white.svg" alt="Cartunings logo"  height="40"/>
+        </a>
+        <input type="search" placeholder="Pesquise o seu kit ou peça" slot="search" class="w-100"/>
+        <div slot="actions" class="actions flex gap-3 center">
+            <button class="p-3 ghost-white r-circle"><i class="icon-1" data-feather="user"></i></button>
+            <button class="p-3 ghost-white r-circle"><i class="icon-1" data-feather="heart"></i></button>
+            <button class="p-3 ghost-white r-circle"><i class="icon-1" data-feather="shopping-cart"></i></button>
+        </div>
+    </navigation-top>
+    <div>
+        <ul>
+            <li>
+                <a href="#kits">KITS</a>
+            </li>
+            <li>
+                <a href="#kits">RODAS</a>
+            </li>
+            <li>
+                <a href="#kits">Peças customizadas</a>
+            </li>
+            <li>
+                <a href="#kits">Faróis</a>
+            </li>
+            <li>
+                <a href="#kits">Turbo</a>
+            </li>
+            <li>
+                <a href="#kits">Pinturas</a>
+            </li>
+        </ul>
+    </div>
+    <main>
+        <div class="wrapper-container">
+            <section class="flex row  gap-3 justify-between">
+                <button class="px-3"><i data-feather="home"></i></button>
+                <div class="lead-actions flex gap-3">
+                    <button class="px-3"><i data-feather="server"></i></button>
+                    <button class="px-3"><i data-feather="filter"></i></button>
+                </div>
+            </section>
+            <h4 class="heading">Kits turbos</h4>
+            <section class="list-products">
+                <div class="card-product">
+                    <div class="picture">
+                        <span class="flex row justify-end">
+                            <button class="px-3"><i data-feather="heart"></i></button>
+                        </span>
+                        <picture>
+                            <img src="" alt="">
+                        </picture>
+                        <div class="galeria">
+                            <ul>
+                                <li>
+                                    <img src="" alt="">
+                                </li>
+                                <li>
+                                    <img src="" alt="">
+                                </li>
+                                <li>
+                                    <img src="" alt="">
+                                </li>
+                                <li>
+                                    <img src="" alt="">
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="body">
+                        <span class="information">
+                            <h5>Nome produto</h5>
+                            <p>Descrition product...</p>
+                        </span>
+                        <div class="value">
+                            <span class="flex row gap-1">
+                                <i data-feather="dollar-sign"></i>
+                                <span class="flex column gap-1 align-start values">
+                                    <small>0,00</small>
+                                    <strong>345,00</strong>
+                                </span>
+                            </span>
+                            <button class="px-3"><i data-feather="shopping-cart"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <footer class="w-100">
+            <button class="w-100">Continuar carregando</button>
+        </footer>
+    </main>
+<script src="./script.js" defer></script>
+</body>
+</html>

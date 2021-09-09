@@ -4,19 +4,28 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cartunings | Oreder</title>
+    <title>Cartunings | Order</title>
     <link rel="stylesheet" href="./style.css">
-    <script module="true" src="../../scripts/index.js"></script>
+    <script src="../../scripts/index.js" defer></script>
+    <script src="../../components/Navigation/index.js" defer></script>
 </head>
 <body>
-    <nav>
+    <navigation-top >
+        <a href="#home" slot="brand">
+            <img src="../../assets/brand-white.svg" alt="Cartunings logo"  height="40"/>
+        </a>
+        <div slot="actions" class="actions flex gap-3 center">
+            <button class="p-3 ghost-white r-circle"><i class="icon-1" data-feather="home"></i></button>
+        </div>
+    </navigation-top>
+    <!-- <nav>
         <div class="nav-container">
             <a href="#home" class="ml-3">
                 <img src="../../assets/brand-white.svg" alt="Cartunings logo"  height="40"/>
             </a>
             <button class="primary p-3"><i class="icon-1" data-feather="home"></i></button>
         </div>
-    </nav>
+    </nav> -->
     <main>
         <div class="wrapper-container">
             <h4 class="heading"><i class="icon-3" data-feather="check"></i>Pedido realizado com sucesso!</h4>
@@ -47,6 +56,6 @@
             <button class="tertiary"><i data-feather="printer"></i>Imprimir comprovante</button>
         </footer>
     </main>
-<script module="true" src="./script.js"></script>
+<script src="./script.js" defer></script>
 </body>
 </html>

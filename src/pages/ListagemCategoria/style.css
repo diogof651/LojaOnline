@@ -22,15 +22,9 @@ nav .nav-container{
 }
 
 .wrapper-container{
-    margin-bottom:var(--scale-large);
-    padding:var(--scale-large);
     display:flex;
     flex-direction: column;
-    gap:var(--scale-xxlarge);
-
-    border-radius:var(--radius-small);
-    border:1px solid var(--color-neutral-1);
-    background:var(--color-principal-light);
+    gap:var(--scale-large);
 }
 
 .wrapper-container>.heading{
@@ -48,6 +42,19 @@ nav .nav-container{
     /* @extend gap-4; */
     /* @apply --gap-4; */
 
+}
+
+.wrapper-container > .list-products{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap:var(--scale-xlarge);
+    margin-bottom:var(--scale-xxlarge);
+}
+
+.list-products > .card-product{
+    background:var(--color-principal-light);
+    border-radius:var(--radius-small);
 }
 
 footer{
@@ -79,7 +86,7 @@ footer{
     navigation-top a{
         margin:0;
     }
-    navigation-top .actions{
+    navigation-top .actions,navigation-top input{
         display:none;
     }
     .wrapper-container>section {

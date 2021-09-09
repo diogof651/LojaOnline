@@ -104,11 +104,13 @@ button:focus-visible,
 button:focus,
 input:focus-visible,
 select:focus-visible,
-input:focus,
-select:focus {
-	outline-width: 4px;
-	outline-color: var(--color-primary-1);
-	outline-offset: 4px;
+a:focus-visible {
+	outline: none;
+	/* outline: 2px solid var(--color-primary-1);
+	outline-offset: 4px; */
+	/* border:2px solid var(--color-primary-1); */
+	box-shadow: 0 0 2 4px var(--color-primary-1);
+	
 }
 
 button:hover {
@@ -162,6 +164,17 @@ button.ghost:hover {
 	border: 2px solid var(--color-primary-2);
 }
 
+button.ghost-white {
+	background: transparent;
+	color: var(--color-principal-light);
+	border: none;
+}
+
+button.ghost-white:hover {
+	color: var(--color-primary-2);
+	background: rgba(255,255,255,0.04);
+}
+
 input[type="text"],
 input[type="number"],
 input[type="range"],
@@ -190,9 +203,18 @@ select {
 	margin: var(--scale-medium);
 }
 
+input[type="search"]{
+	min-height:var(--scale-xbig);
+	font-size:var(--font-headline-x5);
+}
+
+input[type="search"]::placeholder{
+	color:var(--color-neutral-2);
+}
+
 input:hover,
 select:hover {
-	background: var(--color-neutral-6);
+	background: var(--color-neutral-1);
 }
 
 textarea {
