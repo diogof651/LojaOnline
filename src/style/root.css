@@ -5,6 +5,7 @@
 * {
 	margin: 0;
 	box-sizing: border-box;
+	transition: all 400ms ease-in-out;
 }
 
 html,
