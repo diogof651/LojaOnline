@@ -82,6 +82,15 @@ nav .nav-container{
     /* @extend gap-4; */
     /* @apply --gap-4; */
 }
+.wrapper-container > section>.lead-actions>button>svg:nth-child(2){
+    display: none;
+}
+.wrapper-container > section>.lead-actions>button.grid>svg:nth-child(1){
+    display: none;
+}
+.wrapper-container > section>.lead-actions>button.grid>svg:nth-child(2){
+    display: block;
+}
 
 .wrapper-container > .list-products{
     display: grid;
@@ -89,6 +98,10 @@ nav .nav-container{
     grid-template-rows: 1fr;
     gap:var(--scale-xlarge);
     margin-bottom:var(--scale-xxlarge);
+}
+
+.wrapper-container > .list-products.list{
+    grid-template-columns: 1fr;
 }
 
 .list-products > .card-product{
