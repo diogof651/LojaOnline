@@ -22,4 +22,17 @@ window.onload = function () {
             }, 600);
         })
     );
+
+    const navbarBottom = document.querySelector("nav.navigation-bottom");
+    lastScroll = window.scrollY;
+    if(navbarBottom!=undefined){
+        window.addEventListener('scroll',(_)=>{
+            if(lastScroll < window.scrollY){
+                navbarBottom.style.transform = 'translateY(56px)';
+            }else {
+                navbarBottom.style.transform = 'translateY(0)';
+            }
+            lastScroll = window.scrollY;
+        });
+    }
 };

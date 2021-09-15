@@ -21,6 +21,35 @@ nav .nav-container{
     align-items: center;
 }
 
+.navigation-bottom{
+    width: 100%;
+    padding:0 var(--scale-big);
+    height:var(--scale-xxbig);
+    position: fixed;
+    z-index:1091;
+    bottom:0;
+    left:0;
+    display: none;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    gap:var(--scale-large);
+}
+
+.navigation-bottom>span{
+    height:100%;
+    display: flex;
+    place-content: center center;
+}
+
+.navigation-bottom>span>a{
+    display: flex;
+    justify-content: center;
+    padding:var(--scale-small) var(--scale-large);
+    align-items: center;
+    height:100%;
+    color:var(--color-principal-light);
+}
+
 .sub-catgoria{
     width:100%;
     display: flex;
@@ -104,6 +133,90 @@ nav .nav-container{
     grid-template-columns: 1fr;
 }
 
+.wrapper-container > .list-products.list > .card-product{
+    min-height:120px;
+    max-height: 136px;
+    background:var(--color-principal-light);
+    border-radius:var(--radius-small);
+    overflow: hidden;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    transition: all 400ms ease-in-out;
+    border:0px solid transparent;
+}
+
+.wrapper-container > .list-products.list > .card-product .hover-only{
+    height:auto;
+    opacity: 1;
+}
+
+.wrapper-container > .list-products.list > .card-product:hover{
+    box-shadow:0 0 0 1px rgba(0,0,0,.4);
+}
+
+.wrapper-container>.list-products.list>.card-product>.picture{
+    overflow: visible;
+    padding:var(--scale-large);
+    padding-right: 0;;
+    background: transparent;
+}
+
+.wrapper-container>.list-products.list>.card-product>.picture>img{
+    width: 128px;
+    border-radius:var(--radius-small);
+    border:1px solid var(--color-neutral-3);
+}
+.wrapper-container>.list-products.list>.card-product>.picture>span{
+    display: none;
+}
+.wrapper-container>.list-products.list>.card-product>.picture>.galeria{
+    position: absolute;
+    bottom:0;
+    left:100%;
+    width: 200%;
+    display: flex;
+    flex-direction: row;
+    padding:var(--scale-medium) var(--scale-large);
+    flex-wrap: nowrap;
+    overflow-y: auto;
+    gap:var(--scale-medium);
+    justify-content: flex-start;
+    align-items: center;
+    background: transparent;
+}
+
+.wrapper-container>.list-products.list>.card-product>.body{
+    width: 100%;
+    padding:var(--scale-large);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap:var(--scale-medium);
+}
+.wrapper-container>.list-products.list>.card-product>.body>.information{
+    width: 100%;
+}
+.wrapper-container>.list-products.list>.card-product>.body>.value{
+    gap:var(--scale-large);
+}
+
+.wrapper-container>.list-products>.card-product>.body>.value>.actions-card>.list-is-visible{
+    display: none;
+}
+
+.wrapper-container>.list-products.list>.card-product>.body>.value>.actions-card>.list-is-visible{
+    display: block;
+}
+
+.wrapper-container>.list-products.list>.card-product>.body>.value>.actions-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap:var(--scale-medium);
+}
+
 .list-products > .card-product{
     min-height:320px;
     max-height: 320px;
@@ -166,11 +279,16 @@ nav .nav-container{
     display: none;
 }
 
+.list-products > .card-product>.picture>.galeria>span:hover>img{
+    border:2px solid var(--color-principal-dark);
+    cursor: pointer;
+}
+
 .list-products > .card-product>.picture>.galeria>span>img{
     width:var(--scale-big);
     height:var(--scale-big);
     border-radius: var(--radius-small);
-    border:1px solid var(--color-principal-light);
+    border:1px solid var(--color-neutral-3);
 }
 
 
@@ -208,13 +326,19 @@ nav .nav-container{
     /* height:100%; */
 }
 
-.list-products > .card-product:hover .hover-only{
+.list-products > .card-product:hover .hover-only,
+.list-products > .card-product:focus .hover-only,
+.list-products > .card-product:focus-visible .hover-only,
+.list-products > .card-product:focus-within .hover-only{
     animation: slide-down .400s both ease-in-out .100s;
 }
 
-.list-products > .card-product:hover .galeria.hover-only{
+.list-products > .card-product:hover .galeria.hover-only,
+.list-products > .card-product:focus .galeria.hover-only,
+.list-products > .card-product:focus-visible .galeria.hover-only,
+.list-products > .card-product:focus-within .hover-only{
     animation: slide-down .400s both ease-in-out .100s;
-    padding:var(--scale-medium) var(--scale-large);
+    /* padding:var(--scale-medium) var(--scale-large); */
 }
 
 .list-products > .card-product>.body>.value{
@@ -243,11 +367,10 @@ footer{
     justify-content: flex-end;
     flex-direction: row;
     gap:var(--scale-large);
-    flex-grow: 1;
-    flex-flow: 1;
 }
 
-@media only screen and (max-width: 1240px)  {
+/* Media Desktops */
+@media only screen and (max-width: 1199.98px)  {
     main{
         width:var(--width-fullscreen);
         padding:0 var(--scale-large);
@@ -261,7 +384,8 @@ footer{
     }
 }
 
-@media only screen and (max-width:640px){
+/* Media Tablets */
+@media only screen and (max-width: 991.98px)  {
     body{
         position: relative;
     }
@@ -281,13 +405,10 @@ footer{
         flex-direction: column;
     }
 
-    .wrapper-container>section>.lead-actions>button:nth-child(1){
-        display:none;
+    .wrapper-container > .list-products{
+        grid-template-columns: 1fr 1fr;
     }
 
-    .wrapper-container > .list-products{
-        grid-template-columns: 1fr;
-    }
     .sub-catgoria>ul{
         overflow-y: auto;
         place-content: center start;
@@ -306,4 +427,27 @@ footer{
     footer button{
         width:100%;
     }
+}
+
+/* Media Smartphones */
+@media only screen and (max-width:767.98px){
+    .navigation-bottom{
+        display: flex;
+    }
+    .wrapper-container>section>.lead-actions>button:nth-child(1){
+        display:none;
+    }
+
+    .wrapper-container > .list-products{
+        grid-template-columns: 1fr;
+    }
+
+    footer{
+        margin-bottom:var(--scale-big);
+    }
+}
+
+/* Media all devices */
+@media only screen and (max-width:575.98px){
+    
 }

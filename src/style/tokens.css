@@ -187,6 +187,12 @@
 	--width-small: 968px;
 	--width-main: 1200px;
 
+	/* Scale media query */
+	--media-devices:576;
+	--media-tables:768;
+	--media-desktop:992;
+	--media-extra:1200;
+
 	--gap-4: {
 		gap:var(--scale-large);
 	};
