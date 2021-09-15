@@ -322,9 +322,6 @@ nav .nav-container{
     height:0;
     opacity: 0;
 }
-.list-products > .card-product:hover .body{
-    /* height:100%; */
-}
 
 .list-products > .card-product:hover .hover-only,
 .list-products > .card-product:focus .hover-only,

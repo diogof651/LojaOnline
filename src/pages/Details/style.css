@@ -1,0 +1,60 @@
+@import '../../style/root.css';
+@import '../ListagemCategoria/style.css';
+
+
+.details{
+    max-height:480px;
+    flex-flow: row nowrap;
+    justify-content: stretch;
+    gap:var(--scale-large);
+    align-items: stretch ;
+}
+
+.product-images{
+    position: relative;
+    flex-grow: 3;
+    max-height:480px;
+    border-radius: var(--radius-small);
+    overflow: hidden;
+    display: block;
+}
+.product-images>img{
+    width: 100%;
+    max-height:480px;
+    object-fit: cover;
+}
+.product-images>.galeria{
+    position: absolute;
+    bottom:0;
+    left:0;
+    padding:var(--scale-medium);
+}
+
+.product-images>.galeria>span{
+    
+}
+
+.product-images>.galeria>img{
+    width:56px;
+    height:56px;
+}
+
+.product-detail{
+    flex-grow: 1;
+    padding:var(--scale-large);
+    
+    border-radius: var(--radius-small);
+    background:var(--color-principal-light);
+}
+
+/* Media Desktops */
+@media only screen and (max-width: 1199.98px){}
+
+/* Media Tablets */
+@media only screen and (max-width: 991.98px){}
+
+/* Media Smartphones */
+@media only screen and (max-width:767.98px){}
+
+/* Media all devices */
+@media only screen and (max-width:575.98px){}
