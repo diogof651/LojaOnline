@@ -7,8 +7,8 @@ Loja online é uma aplicação que permite clientes selecionem e comprem produto
 
 ## Check List Screens
 - [ ] Home
-- [ ] Listagem categoria
-- [ ] Listagem categoria bloco
+- [X] Listagem categoria
+- [X] Listagem categoria bloco
 - [ ] Login
 - [ ] Detalhe item
 - [ ] Favoritos
