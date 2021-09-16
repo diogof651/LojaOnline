@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./style.css">
     <script src="../../scripts/index.js" defer></script>
     <script src="../../components/Navigation/index.js" defer></script>
+    <script src="../../components/Rating/index.js" defer></script>
 </head>
 <body>
     <navigation-top >
@@ -63,15 +64,42 @@
                         <span class="flex row  align-center gap-3">
                             <i data-feather="dollar-sign"></i>
                             <span class="flex column gap-1 align-start values">
-                                <small>500,00</small>
-                                <strong class="price">345,00</strong>
+                                <small class="desc">25% de desconto</small>
+                                <span class="flex align-center gap-2">
+                                    <strong class="price">345,00</strong>
+                                    <small class="price-desc">500,00</small>
+                                </span>
                             </span>
                         </span>
                     </div>
-                    <div class="avaliable"></div>
-                    <div class="actions"></div>
-                    <div class="extra"></div>
+                    <div class="avaliable">
+                        <label>Avaliação do produto</label>
+                        <span class="flex gap-2 align-center">
+                            <star-rater data-rating="4"></star-rater> 4,7
+                        </span>
+                        
+                    </div>
+                    <div class="actions">
+                        <button class="primary w-100 flex justify-between align-center">
+                            Adicionar ao carrinho
+                            <i data-feather="shopping-cart"></i>
+                        </button>
+                        <button class="secondary w-100 flex justify-between align-center">
+                            Finalizar compra
+                            <i data-feather="chevron-right"></i>
+                        </button>
+                    </div>
+                    <div class="extra">
+                        <i data-feather="truck"></i>
+                        <strong>Centro 11 de agosto - Perj. 13 de agosto</strong>
+                        <p>Entrega rápida</p>
+                        <strong>Gratuitamente*</strong>
+                    </div>
                 </div>
+            </section>
+            <section class="descrition">
+                <div class="carac"></div>
+                <div class="comments"></div>
             </section>
             <h4 class="heading">Produtos relacionados</h4>
             <section class="list-products">
