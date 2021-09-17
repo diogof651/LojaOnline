@@ -12,6 +12,7 @@
 }
 
 .product-images{
+    width:66.67%;
     position: relative;
     flex-grow: 3;
     max-height:480px;
@@ -31,16 +32,13 @@
     padding:var(--scale-medium);
 }
 
-.product-images>.galeria>span{
-    
-}
-
 .product-images>.galeria>img{
     width:56px;
     height:56px;
 }
 
 .product-detail{
+    width:33.33%;
     flex-grow: 1;
     display: flex;
     flex-flow:column nowrap;
@@ -100,15 +98,109 @@
     border-radius: var(--radius-small);
 }
 
+.descrition{
+    display:flex;
+    flex-flow:row nowrap;
+    justify-content: space-around;
+    align-items: stretch;
+    gap:var(--scale-large);
+}
+
+.descrition>.carac{
+    width:66.67%;
+    display:flex;
+    flex-grow:4;
+    flex-flow:column wrap;
+    background: var(--color-principal-light);
+    border-radius:var(--radius-small);
+    padding:var(--scale-large);
+}
+
+.descrition>.carac>.tab-horizontal{
+    width:100%;
+}
+.descrition>.carac>.tab-horizontal>.tab-head{
+
+}
+
+.descrition>.carac>.tab-horizontal>.tab-body{
+
+}
+
+.descrition>.carac>.tab-horizontal>.tab-body>.tab-content{
+    display:none;
+}
+
+.descrition>.carac>.tab-horizontal>.tab-body>.tab-content.active{
+    display:block;
+}
+
+.descrition>.carac>.tab-horizontal>.tab-body>.tab-content>p{
+    width:100%;
+    white-space:wrap;
+}
+
+.descrition>.comments{
+    width:33.33%;
+    display:flex;
+    flex-flow:column wrap;
+    flex-grow:2;
+    gap:var(--scale-medium);
+    background: var(--color-principal-light);
+    border-radius:var(--radius-small);
+    padding:var(--scale-large);
+}
+
+.nps-rating{
+    display:flex;
+    flex-flow:column nowrap;
+}
+
+.nps-rating>li{
+    list-style:none;
+}
+
 
 /* Media Desktops */
 @media only screen and (max-width: 1199.98px){}
 
 /* Media Tablets */
-@media only screen and (max-width: 991.98px){}
+@media only screen and (max-width: 991.98px){
+    .product-images{
+        width: 100%;
+    }
+
+    .product-detail{
+        width: 100%;
+    }
+
+    .descrition>.carac{
+        width: 100%;
+    }
+
+    .descrition>.comments{
+        width: 100%;
+    }
+}
 
 /* Media Smartphones */
-@media only screen and (max-width:767.98px){}
+@media only screen and (max-width:767.98px){
+    .product-images{
+        width: 100%;
+    }
+
+    .product-detail{
+        width: 100%;
+    }
+
+    .descrition>.carac{
+        width: 100%;
+    }
+
+    .descrition>.comments{
+        width: 100%;
+    }
+}
 
 /* Media all devices */
 @media only screen and (max-width:575.98px){}
