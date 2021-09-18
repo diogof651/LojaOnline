@@ -46,6 +46,9 @@
     </div>
     <main>
         <div class="wrapper-container">
+            <section class="flex row  gap-3 justify-between">
+                <button class="px-3"><i data-feather="home"></i></button>
+            </section>
             <section class="details">
                 <div class="product-images">
                     <img src="../../assets/img-products/car-opala-principal.jpg" alt="">
@@ -55,7 +58,7 @@
                         <img src="../../assets/img-products/car-opala-3.jpg" alt="">
                     </div>
                 </div>
-                <div class="product-detail">
+                <aside class="product-detail">
                     <div class="header">
                         <h5>Kit Opala SS - 6 cilindros </h5>
                         <button class="px-3"><i data-feather="heart"></i></button>
@@ -95,33 +98,39 @@
                         <p>Entrega rápida</p>
                         <strong>Gratuitamente*</strong>
                     </div>
-                </div>
+                </aside>
             </section>
             <section class="descrition">
                 <div class="carac">
                     <div class="tab-horizontal">
                         <div class="tab-head">
-                            <a href="#">Detalhes</a>
+                            <a href="#" class="active">Detalhes</a>
                             <a href="#">Caracteristicas</a>
                         </div>
                         <div class="tab-body">
                             <div class="tab-content active" id="detalhes">
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores possimus cum harum facere corrupti, beatae ad! Dolor, earum! Repellendus temporibus aliquid at odio pariatur incidunt officiis expedita reprehenderit saepe distinctio?
+                                <p>Descrição do produto
                                 </p>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores possimus cum harum facere corrupti, beatae ad! Dolor, earum! Repellendus temporibus aliquid at odio pariatur incidunt officiis expedita reprehenderit saepe distinctio?
+                                <p>Opala SS 1979 Original 2.5, lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja de tipos e os embaralhou para fazer um livro de modelos de tipos. Lorem Ipsum sobreviveu não só a cinco séculos, como também ao salto para a editoração eletrônica, permanecendo essencialmente inalterado.
                                 </p>
                             </div>
                             <div class="tab-content" id="caracteristicas">
-                                <table>
+                                <table class="table-left radius">
                                     <tr>
                                         <th>Fabricante</th>
                                         <td>CHEVROLET</td>
                                     </tr>
                                     <tr>
-                                        <th>
-                                            Versão
-                                        </th>
+                                        <th>Label</th>
+                                        <td>Descrition</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Versão</th>
                                         <td>3.8</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Outras informações</th>
+                                        <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto obcaecati saepe placeat qui sit quae iste praesentium magni neque, reiciendis nihil eaque corrupti blanditiis voluptate. Esse soluta tenetur repudiandae pariatur!</td>
                                     </tr>
                                 </table>
                             </div>
@@ -137,23 +146,23 @@
                     <div class="nps-rating">
                         <li>
                             <strong>5</strong>
-                            <span class="progress"></span>
+                            <progress class="progress" value="89" max="100"></progress>
                         </li>
                         <li>
                             <strong>4</strong>
-                            <span class="progress"></span>
+                            <progress class="progress" value="100" max="100"></progress>
                         </li>
                         <li>
                             <strong>3</strong>
-                            <span class="progress"></span>
+                            <progress class="progress" value="0" max="100"></progress>
                         </li>
                         <li>
                             <strong>2</strong>
-                            <span class="progress"></span>
+                            <progress class="progress" value="0" max="100"></progress>
                         </li>
                         <li>
                             <strong>1</strong>
-                            <span class="progress"></span>
+                            <progress class="progress" value="0" max="100"></progress>
                         </li>
                     </div>
                     <button class="flex row justify-between align-center">Ver comentários <i data-feather="message-square"></i></button>
