@@ -14,7 +14,34 @@ nav{
 
 input[type=email] {
     height: 50px;
-    }
+}
+
+input[type=password] {
+    height: 50px;
+}
+
+.grid {
+    display: grid;
+}
+p {
+    line-height:2 ;
+    padding-left: 10px;    
+}
+
+
+
+.grid-template-columns-3 {
+    grid-template-columns: 1fr 1fr;
+    margin-bottom:var(--scale-large);
+    padding:var(--scale-large);
+    display:grid;
+    flex-direction: column;
+    gap:var(--scale-xxlarge);
+
+    border-radius:var(--radius-small);
+    border:1px solid var(--color-neutral-1);
+    background:var(--color-principal-light);
+}
 
 nav .nav-container{
     width:var(--width-main);
@@ -23,6 +50,9 @@ nav .nav-container{
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+}
+.headingitem2{
+    padding-left: 50px ;
 }
 
 
